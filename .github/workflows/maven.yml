@@ -37,7 +37,7 @@ jobs:
         with:
           host: ${{ secrets.REMOTE_HOST }}
           username: ${{ secrets.REMOTE_USER }}
-#          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             docker pull nunelaharigupta/springboot-images-new:0.0.1
             docker stop app || true && docker rm app || true
